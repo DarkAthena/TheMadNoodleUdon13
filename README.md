@@ -1,6 +1,8 @@
 # TheMadNoodleUdon13
 My keymap for the Udon 13 by TheMadNoodle
 
+I am NOT a programmer. I've commented my keymap.c file as best I can but use at your own risk. Thank you to elpekenin on the QMK Discord channel for helping me again! :)
+
 -- The keymap.c file contains the keymap and is ready for your edits. You'll need to setup QMK prior to compiling.
 
 -- The .hex file is the compiled firmware. Flash away.
