@@ -14,10 +14,9 @@ set to once I'd edited them. There's no way to change layer names in VIAL so yea
 
 If your OLED names display funky and the logo gets glitchy, fiddle around with this part of the keymap towards the bottom of the file:
 
-
+```
 bool oled_task_user(void) {
 
-    
     render_logo();
     oled_set_cursor(7,0);
     oled_write_P(PSTR("k8 Noodle"), false);
@@ -38,14 +37,15 @@ bool oled_task_user(void) {
     case _RGB:
       oled_write_P(PSTR("RGB  "), false);
       break; 
-      
+ ```
+  
 specifically the spaces after "Numpad", "DDraft", "Empty", and "RGB". The trailing spaces seem to hose up the next line somehow. I don't know how because I'm
 not a programmer. 
 
 Change the "k8 Noodle" bit if you want to change the name on your pad. The default is "The Mad Noodle".
-
+```
 render_logo();
     oled_set_cursor(7,0);
     oled_write_P(PSTR("k8 Noodle"), false);
-
+```
 That's all. Have fun!
